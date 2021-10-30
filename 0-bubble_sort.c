@@ -3,11 +3,13 @@
  * swap_int - a function to swap to int
  * @a: number to be swapped
  * @b: number to be swapped
+ *
  * Return: void
  */
 void swap_int(int *a, int *b)
 {
 	int c;
+
 	c = *a;
 	*a = *b;
 	*b = c;
@@ -16,6 +18,7 @@ void swap_int(int *a, int *b)
  * bubble_sort - order a list with bubble method
  * @array: an array to sort
  * @size: the size of the array
+ *
  * Return: void
  */
 void bubble_sort(int *array, size_t size)
