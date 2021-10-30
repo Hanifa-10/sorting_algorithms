@@ -10,6 +10,7 @@
 void swap_int(int *a, int *b)
 {
 	int c;
+
 	c = *a;
 	*a = *b;
 	*b = c;
@@ -23,12 +24,12 @@ void swap_int(int *a, int *b)
 void selection_sort(int *array, size_t size)
 {
 	size_t tripper, s_tripper, c_pos;
+
 	if (!array || size < 2)
 		return;
 	for (tripper = 0; tripper < size - 1; tripper++)
 	{
 		c_pos = tripper;
-		
 		for (s_tripper = tripper + 1; s_tripper < size; s_tripper++)
 			if (array[s_tripper] < array[c_pos])
 				c_pos = s_tripper;
