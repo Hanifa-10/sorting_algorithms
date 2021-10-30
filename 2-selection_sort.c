@@ -30,7 +30,7 @@ void selection_sort(int *array, size_t size)
 		c_pos = tripper;
 		
 		for (s_tripper = tripper + 1; s_tripper < size; s_tripper++)
-			if (array[s_tripper] < array[c_post])
+			if (array[s_tripper] < array[c_pos])
 				c_pos = s_tripper;
 		if (c_pos != tripper)
 		{
